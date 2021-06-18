@@ -49,6 +49,7 @@ class Contact {
 
     handleClick = () => {
         if (event.target.innerText === 'Delete'){
+            this.element.remove()
             contactService.deleteContact(this.id)
         }
     }
